@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Population Map</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #controls {
+            margin: 10px;
+        }
+        select {
+            padding: 5px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>World Population Map</h1>
+
+    <div id="controls">
+        <label for="countrySelect">Select Country:</label>
+        <select id="countrySelect">
+            <option value="all">Loading...</option>
+        </select>
+
+        <label for="stateSelect">Select State:</label>
+        <select id="stateSelect">
+            <option value="all">Select a Country First</option>
+        </select>
+        <h2 id="populationHeader">World Population: Loading...</h2>
+
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
